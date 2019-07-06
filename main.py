@@ -31,8 +31,6 @@ def hitDon():
 		keyboard.release('j')
 		Vars.donNum -= 1
 
-	# print("Done")
-
 
 def hitKatsu():
 	print("Katsu!")
@@ -47,8 +45,6 @@ def hitKatsu():
 		keyboard.release('k')
 		Vars.katsuNum -= 1
 
-	# print("Done")
-
 
 def play():
 
@@ -61,8 +57,6 @@ def play():
 	pixel = opImage.getpixel((1, 5))
 	pixel2 = opImage.getpixel((5, 5))
 	pixel3 = opImage.getpixel((10, 5))
-
-	# print(pixel)
 
 	if ((pixel[0] < 50 and pixel[1] > 150 and pixel[2] > 150)
 	or (pixel2[0] < 50 and pixel2[1] > 150 and pixel2[2] > 150)
@@ -83,12 +77,6 @@ def main():
 			Vars.awaitInput = False
 			while (True):
 				play()
-
-	# image = ImageGrab.grab(Coordinates.hitZone)
-	# image.mode = "RGB"
-	# opImage = ImageOps.solarize(image, 8)
-
-	# opImage.show()
 
 
 main()
